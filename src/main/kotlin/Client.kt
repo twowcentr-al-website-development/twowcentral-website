@@ -7,7 +7,7 @@ fun main() {
     document.body!!.appendChild(container)
 
     val welcome = Welcome.create {
-        name = "Kotlin/JS"
+        name = "user"
     }
     createRoot(container).render(welcome)
 }

@@ -2,7 +2,7 @@ plugins {
     kotlin("js") version "1.8.0"
 }
 
-group = "al.twowcentr"
+group = "al.twowcentr" // twowcentr.al but reversed because thats how groups work
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -17,7 +17,7 @@ dependencies {
 }
 
 kotlin {
-    js {
+    js(IR) {
         binaries.executable()
         browser {
             commonWebpackConfig {
